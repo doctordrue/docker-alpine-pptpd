@@ -7,8 +7,8 @@ Build docker image based on Alpine linux with PPTP server.
 Example:
 
 		# Secrets for authentication using PAP
-		# client    server      secret      acceptable local IP addresses
-		username	*			password	*
+		# client	server	secret		acceptable local IP addresses
+		username	*	password	*
 3. Run:
 
 		//start server
