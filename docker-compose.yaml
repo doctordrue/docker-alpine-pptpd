@@ -8,4 +8,6 @@ services:
        - ./chap-secrets:/etc/ppp/chap-secrets:ro
       cap_add:
        - NET_ADMIN
+      privileged: true
       restart: always
+      
