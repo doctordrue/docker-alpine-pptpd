@@ -1,0 +1,11 @@
+services:
+   pptpd:
+      build: .
+      image: doctordrue/alpine-pptpd:1.0
+      ports:
+       - "1723:1723"
+      volumes:
+       - ./chap-secrets:/etc/ppp/chap-secrets:ro
+      cap_add:
+       - NET_ADMIN
+      restart: always
